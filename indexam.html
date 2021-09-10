@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digikala</title>
+    <link rel="stylesheet" href="indexa.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../../fontawesome-free-5.15.3-web/css/all.css">
+</head>
+<body>
+  <!--heder navbar menu -->
+  <header class="container-fluid header-navbar ">
+    <div class="row">
+      <div class="col-lg-7 col-3 col-sm-6 " style="display: flex;">
+        <a href="/coding/indexam.html" class="navbar-icons">Digikala</a>
+        <!-- <button class="btn-input-md" type="submit"><i class="fas fa-search"></i></button> -->
+        <form class="form-navbar d-none d-md-flex">
+          <button class="btn-input" type="submit"><i class="fas fa-search"></i></button>
+          <input class="navbar-input" type="text" placeholder="جستجو..." >
+        </form>
+      </div>
+      <div class="col-lg-5 col-sm-6 col-9 ">
+        <div class="amir">
+          <div class="box-sabt">
+            <i class="far fa-user" style="margin: 0px 10px ;font-size: 1.2em;"></i>
+            <span>ورود به حساب کاربری</span>
+          </div>
+          <i class="fas fa-shopping-cart icon-soping"></i>
+        </div>
+      </div>
+    </div>
+    <nav class="menu ">
+      <div class="row">
+        <div class="col d-none d-md-inline">
+          <ul class="nav-ul ">
+            <li class="nav-li"><a class="nav-link" href="#">دسته بندی کالاها</a></li>
+            <li class="nav-li"><a class="nav-link" href="#">سوپر مارکت</a></li>
+            <li class="nav-li"><a class="nav-link" href="#">تخفیف ها و پیشنهادات ویژه</a></li>
+            <li class="nav-li"><a class="nav-link" href="#">دیجی کالای من</a></li>
+            <li class="nav-li"><a class="nav-link" href="#">دیجی پلاس</a></li>
+            <li class="nav-li"><a class="nav-link" href="#">دیجی کلاب</a></li>
+            <li class="nav-li"><a class="nav-link" href="#">دیجی پی</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <nav class="menu-md activ d-md-none d-flex" style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../imges/10.jpg);">
+    <button class="btn-menu " style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../../imges/11.jpg);" type="button">
+      <div class="line1 line"></div>
+      <div class="line2 line"></div>
+      <div class="line3 line"></div>
+    </button>
+    <div class="row">
+      <div class="col">
+        <form class="form-navbar">
+          <button class="btn-input md" type="submit"><i class="fas fa-search"></i></button>
+          <input class="navbar-input md" type="text" placeholder="جستجو..." >
+        </form>
+        <ul class="nav-ul ">
+          <li class="nav-li"><a class="nav-link" href="#">دسته بندی کالاها</a></li>
+          <li class="nav-li"><a class="nav-link" href="#">سوپر مارکت</a></li>
+          <li class="nav-li"><a class="nav-link" href="#">تخفیف ها و پیشنهادات ویژه</a></li>
+          <li class="nav-li"><a class="nav-link" href="#">دیجی کالای من</a></li>
+          <li class="nav-li"><a class="nav-link" href="#">دیجی پلاس</a></li>
+          <li class="nav-li"><a class="nav-link" href="#">دیجی کلاب</a></li>
+          <li class="nav-li"><a class="nav-link" href="#">دیجی پی</a></li>
+          <li class="nav-li"><a class="nav-link a" href="#">ورورد / ثبت نام</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end off heder navbar menu -->
+  <!-- <section>1 -->
+  <section class="container-fluid" style="margin: 20px 0px; padding: 0px 40px;">
+    <div class="row">
+      <div class="col t1" id="t1">
+        <span class="span-tab activ">تا 50 % تخفیف</span>
+        <span class="span-tab">جوایز ویژه</span>
+        <span class="span-tab">ارسال رایگان</span>
+      </div>
+    </div>
+    <div class="row box-t2" style="margin: 15px 0px; position: relative;">
+      <div class="col-md-8 t2 t-am " style="position: relative;">
+        <button onclick="nextSliderT()" type="button" class="btn-next-prev next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+        <button onclick="prevSliderT()" class="btn-next-prev prev">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <img src="../imges/10.jpg" class="img-slider-t activ">
+        <img src="../imges/11.jpg" class="img-slider-t">
+        <img src="../imges/12.jpg" class="img-slider-t">
+        <img src="../imges/13.jpg" class="img-slider-t">
+        <img src="../imges/14.jpg" class="img-slider-t">
+        <img src="../imges/15.jpg" class="img-slider-t">
+        <img src="../imges/16.jpg" class="img-slider-t">
+        <img src="../imges/17.jpg" class="img-slider-t">
+        <div class="dotslider " dir="ltr">
+          <div class="dots" onclick="dotclick(0)"></div>
+          <div class="dots" onclick="dotclick(1)"></div>
+          <div class="dots" onclick="dotclick(2)"></div>
+          <div class="dots" onclick="dotclick(3)"></div>
+          <div class="dots" onclick="dotclick(4)"></div>
+          <div class="dots" onclick="dotclick(5)"></div>
+          <div class="dots" onclick="dotclick(6)"></div>
+          <div class="dots" onclick="dotclick(7)"></div>
+        </div>
+      </div>
+      <div class="col-md-4 d-none d-md-inline-block" style="position: relative;padding: 0 !important;">
+        <div class="col-md-12  t-am t2a  col-sm-6 " style="background-image: url(../imges/11.jpg);" id="ma">
+        </div>
+        <div class="col-md-12  t-am t2a  col-sm-6 " style="background-image: url(../imges/17.jpg);"id="am">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end off <section>1-->
+  <!-- box-keshoee1 -->
+  <section class="container-fluid box-kesh">
+    <div class="row">
+      <div class="col-3 d-none d-md-flex faf">
+        <p class="pish">پیشنهاد شگفت انگیز</p>
+        <button class="btn-box-kehs">مشاهده همه<i class="fa fa-angle-left" aria-hidden="true"></i></button>
+      </div>
+      <div class="col-12 col-md-9" id="box-card">
+        <div class="box-card-t">
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/2.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/20.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/21.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/22.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/23.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/24.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/25.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/26.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/27.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/28.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/29.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+          <div class="card">
+          <div class="card-header">
+            <img src="../imges/30.jpg" class="img-card">
+          </div>
+          <div class="card-body">
+            <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+          </div>
+          <div class="card-footer" dir="ltr">
+            <span class="takh-card">20%</span>
+            <span><del>180,000</del></span>
+            <div style="padding: 7px 0px;">
+              <span dir="rtl">
+                <span class="amd">تومان</span>
+                <span class="kja">160,000</span>
+              </span>
+            </div>
+          </div>
+          <div class="timer-card" dir="rtl">
+            <span class="tim s">11:</span>
+            <span class="tim d">12:</span>
+            <span class="tim san">13:</span>
+            <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+          </div>
+          </div>
+        </div>
+        <button onclick="boxjdawdinext()" class="btn-next-prev-boxKesh next" id="next-add"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button onclick=" boxjdawdiprev()" id="prev-add" class="btn-next-prev-boxKesh prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
+  <!--end off box-keshoee1 -->
+  <!-- 4box tabli -->
+  <section class="container-fluid">
+    <div class="row justify-content-center mar">
+      <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+        <img src="../imges/11.jpg" class="img-4box">
+      </div>
+      <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+        <img src="../imges/13.jpg" class="img-4box">
+      </div>
+      <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+        <img src="../imges/15.jpg" class="img-4box">
+      </div>
+      <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+        <img src="../imges/17.jpg" class="img-4box">
+      </div>
+    </div>
+  </section>
+  <!--end off 4box tabli -->
+    <!-- box-keshoee2 -->
+    <section class="container-fluid box-kesh gerin">
+      <div class="row">
+        <div class="col-3 d-none d-md-flex faf">
+          <p class="pish">پیشنهاد شگفت انگیز سوپر مارکت</p>
+          <button class="btn-box-kehs">مشاهده همه<i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        </div>
+        <div class="col-12 col-md-9" id="box-card">
+          <div class="box-card-t">
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/1.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/2.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/3.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/4.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/5.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/6.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/7.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/8.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/9.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/10.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/11.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header">
+              <img src="../imges/12.jpg" class="img-card">
+            </div>
+            <div class="card-body">
+              <p class="text-card">BMW مدل 2021 8000 اسب بخار</p>
+            </div>
+            <div class="card-footer" dir="ltr">
+              <span class="takh-card">20%</span>
+              <span><del>180,000</del></span>
+              <div style="padding: 7px 0px;">
+                <span dir="rtl">
+                  <span class="amd">تومان</span>
+                  <span class="kja">160,000</span>
+                </span>
+              </div>
+            </div>
+            <div class="timer-card" dir="rtl">
+              <span class="tim s">11:</span>
+              <span class="tim d">12:</span>
+              <span class="tim san">13:</span>
+              <span class="tim a" dir="ltr"><i class="far fa-clock" aria-hidden="true"></i></span>
+            </div>
+            </div>
+          </div>
+          <button onclick="boxjdawdinext()" class="btn-next-prev-boxKesh next" id="next-add"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          <button onclick=" boxjdawdiprev()" id="prev-add" class="btn-next-prev-boxKesh prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+    <!--end off box-keshoee2 -->
+      <!-- 2box tabli -->
+  <section class="container-fluid">
+    <div class="row justify-content-center mar">
+      <div class="col-12 col-sm-6">
+        <img src="../imges/16.jpg" class="img-4box">
+      </div>
+      <div class="col-12 col-sm-6">
+        <img src="../imges/17.jpg" class="img-4box">
+      </div>
+  </section>
+  <!--end off 2box tabli -->
+  <!-- mobile -->
+  <!-- <section class="container-fluid" style="padding: 30px 0px;background-color: #f0f0f0;">
+    <div class="row">
+      <div class="col-sm-9" style="overflow: hidden;">
+      <div class="titr-mobil">
+        <h3>گوشی موبایل</h3>
+        <span>بر اساس بازدید های شما</span>
+      </div>
+      <div class="box-mobil">
+        <div class="box-mobil-t">
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/13.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/10.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/14.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/15.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/16.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/17.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/18.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/19.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/20.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/21.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/22.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/23.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/24.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/25.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/29.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+          <div class="card-mobil">
+            <div class="header-card-mobil">
+              <img src="../imges/26.jpg" class="img-card-mobil">
+            </div>
+            <div class="body-card-mobil">
+              گوشی موبایل مدل A355D سامسونگ
+            </div>
+            <div class="footer-card-mobil">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-3" style="position: relative;">
+        <div class="box-slider-card">
+          <div class="titr">پیشنهاد های لحظه ای برای شما </div>
+          <div class="praggre-titr-card-slider">
+            <div class="praggres"></div>
+          </div>
+          <div class="card-slider">
+            <div class="card-header-slider">
+              <img src="../imges/1.jpg" class="img-slider-card">
+            </div>
+            <div class="card-body-slider">
+              <a href="#" class="link-card-slider">پوشی موبایل مودل شیامی Kaps ss</a>
+            </div>
+            <div class="card-footer-slider">
+              <span><span class="qh-card-mobil">6,685,000</span><span class="toman-card-mobil">تومان</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- endd  off mobile -->
+<script src="indexam.js"></script>
+</body>
+</html>
